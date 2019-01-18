@@ -125,8 +125,8 @@ public class Socket {
         })
     }
     
-    public init(urlRequest: URLRequest) {
-        self.init(connection: WebSocket(urlRequest: url))
+    public convenience init(urlRequest: URLRequest) {
+        self.init(connection: WebSocket(request: urlRequest))
     }
     
     /// Initializes the Socket
