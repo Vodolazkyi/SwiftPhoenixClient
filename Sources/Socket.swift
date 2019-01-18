@@ -125,6 +125,10 @@ public class Socket {
         })
     }
     
+    public init(urlRequest: URLRequest) {
+        self.init(connection: WebSocket(urlRequest: url))
+    }
+    
     /// Initializes the Socket
     ///
     /// - parameter url: The string Websocket endpoint. ie "ws://example.com/socket", "wss://example.com/socket
